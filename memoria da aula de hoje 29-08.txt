@@ -1,0 +1,23 @@
+memória da aula de hoje.
+
+algoritmo que deveria apenas testar a senha digitada no formulário com a senha constante no próprio algoritmo, sendo iguais deveria emitir uma mensagem de confirmação. Porém sendo errada deveria direcionar para um arquivo de cadastro. 
+
+a aula hoje foi uma sequencia da aula anterior, onde foi ensinado metodos de criptografias, 
+sendo que na aula anterior ficou claro e definido que o melhor metodo de criptografia era o metodo Hash, em relação ao MD5
+
+Na aula de hoje, foi solicitado que criassem um formulário para entrada de senha (nesse formulário poderia conter:E-mail ou Usuário e Senha)
+
+Desse formulário o campo SENHA seria então repassado para um arquivo PHP que faria a verificação da senha se igual a senha fornecida ou senão.
+
+caso a senha conferisse, deveria enviar uma mensagem na TELA senha válida. 
+
+porém caso não conferisse a senha, o programa direcionaria para outra página, php ou html, afim de que o usuário proceda um cadastro de senhas. 
+
+é importante frisar dessa aula as tecnicas:
+
+	$senha = $_POST['senha'] ----> metodo de passagem de informações vindas do formulário ( através do NAME) do formulário de login.
+
+e também foi demonstrado uma forma de direcionamento para uma nova página:
+
+	o header("location:cadastro.php");
+

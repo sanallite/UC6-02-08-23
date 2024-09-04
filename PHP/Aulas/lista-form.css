@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(175deg, darkgreen, lightgreen);
+    background-attachment: fixed;
+}
+
+h1 { 
+    text-align: center;
+    color: white;
+    margin-top: 0.625em;
+}
+
+form {
+    width: 45%;
+    margin: auto;
+}
+
+label { 
+    display: block;
+    margin-top: 0.625em;
+    color: white;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 0.31em;
+    font-size: 1.2em;
+    border-style: none;
+    display: block;
+}
+
+input[type="submit"] {
+    background-color: goldenrod;
+    color: white;
+    cursor: pointer;
+    float: right;
+    padding: 1em;
+    font-size: 1em;
+    margin-top: 0.625em;
+}
+
+table {
+    width: 50%;
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    background-color: darkgray;
+    font-size: 1em;
+    padding: 0.625em;
+    border: 0.2em solid darkgreen;
+}
+
+td { border: solid thin black;
+    background-color: white;
+    padding: 0.31em;
+    /* text-indent: 20px; Também é utilizado para colocar um espaço antes da linha do texto. */
+}

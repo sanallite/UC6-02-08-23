@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localizador</title>
+</head>
+<body>
+    <h1>Encontrando um nome</h1>
+
+    <input type="text" name="" id="alunoid" onchange="exibirNomeENota()">
+    <input type="submit" value="Enviar" onclick="">
+
+    <script>
+        function exibirNomeENota() { 
+            const alunos= ["Márcio", "Paulo", "Heitor", "Aliffer", "Cayuri", "Davi", "Giovanni", "Eloisa"];
+
+            const medias= [10, 6, 9.5, 9.5, 8, 7, 6, 7];
+
+            const listaDeAlunosEMedias= [alunos, medias];
+            /* Conjunto de dois vetores. */
+
+            let nomeDigitado = document.getElementById('alunoid').value;
+
+            const indice= alunos.indexOf(nomeDigitado);
+            
+            const mediaDoAluno= medias[indice];
+            /* As médias terão o mesmo índice da lista de alunos, então lista das notas deve estar na mesma ordem da dos alunos. */
+
+            if ( alunos.includes(nomeDigitado) ) {
+                for (i = 0; i<alunos.length; i++ ) { 
+                    if ( nomeDigitado == alunos[i] ) { 
+                        document.write(nomeDigitado+ " tem a média " +mediaDoAluno);
+                    }
+                }
+            }
+
+            else {
+                document.write("Aluno não encontrado.");
+            }
+            /* Se o nome digitado for encontrado no vetor, ele será percorrido por um loop que quando o nome digitado for igual ao nome do aluno armazenado, escreverá na tela o nome daquele a aluno e a média dele. */
+        }
+    </script>
+</body>
+</html>

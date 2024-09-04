@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percorrendo o vetor</title>
+</head>
+<body>
+    <script>
+        const lista= [50, 43, 12, 98, 115, 215];
+
+        for (itemlista= 0; itemlista<=lista.length; itemlista++) {
+            document.write(itemlista+ "- " +lista[itemlista]+ "<br>");
+        }
+
+        /* Se a condição para o loop continuar a ser executado é que a variável itemlista seja menor ou igual ao número de posições no vetor lista, o loop for irá exectuar mais uma vez, contando que existem seis posições no vetor, então escrevendo um valor que não foi definido, pois o loop contou apartir de 1 não de 0. */
+
+        let menor= Math.min(...lista);
+        document.write("<br>Menor número utlizando Math.min:" +menor);
+        /* Maneira mais fácil de ser feita, com o cálculo automático de qual é o menor valor dentro do vetor lista. */
+
+        for (itemlista= 0; itemlista<=6; itemlista++) { 
+            if (lista[itemlista]<=12) {
+                document.write("<br>Menor número utilizando o for: " +lista[itemlista]);
+            }
+        }
+        /* Irá escrever na tela apenas item da lista que tem o valor menor ou igual a 12, que é o menor, mas para isso é necessário saber qual é o menor número dentro do array. */
+
+        let min= lista[0];
+        for (itemlista= 0; itemlista<=lista.length; itemlista++) {
+            if (lista[itemlista]<min) { min= lista[itemlista]; 
+            }
+        }
+        document.write("<br>Menor número utilizando o for de maneira responsiva: " +min);
+        /* 
+            Primeiro, é definido uma variável que equivalerá ao valor presente na posição zero do vetor lista, nesse caso chamada de min.
+
+            Segundo, é feito um loop con uma condição de que o item da lista tem que ter o valor menor que a variável min, e se s condição for atendida, a variável min passará a ter o valor daquele item da lista.
+
+            Terceiro, o loop continuará a ser executado, percorrendo cada item da lista, e a condicional irá verificar se o valor do item é menor que o anterior, no caso o próximo é 43 e o anterior 50; o próximo é menor então a variável min passará a ter esse valor e então o loop faz o mesmo processo até passar por todo o array, armazenando o item com o menor valor, nesse caso 12.
+
+            Lembrando que a variável itemlista só tem valor dentro do loop for, nesse caso, os três loops, pois não é uma variável global e sim uma local. Enquanto lista é uma variável global.
+        */
+    </script>
+</body>
+</html>

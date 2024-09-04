@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(180deg, #1a07e6, #072a4f) ;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main { background-color: lightgray;
+    width: 30%;
+    padding: 1em;
+    margin-top: 1.1em;
+    margin-bottom: 1.1em;
+    border: solid thin black;
+    box-shadow: 0 0 20px #333;
+}
+
+header>h1 { margin-top: 0;
+}
+
+input[type="submit"] {
+    width: 10%;
+    margin: auto 0.5em;
+}
+
+input[type="submit"]:first-of-type {
+    margin-left: 0;
+}
+
+p:not(form p) { color: #fff }
+/* Vai estilizar apenas os paragráfos que não são filhos do form */
+
+input[id="resultado"] {
+    display: block;
+    width: 90%;
+}

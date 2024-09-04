@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: inherit;
+    display: grid;
+    grid-template-rows: 90px 45px 1fr 50px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "cabe" "nave" "prin" "roda";
+}
+
+.cabecalho {
+    grid-area: cabe;
+    background-color: orange;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cabecalho>h1 {
+    margin: inherit;
+    font-weight: 300;
+    font-size: 2.8rem;
+}
+
+.cabecalho h2 {
+    font-weight: 150;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.navegacao {
+    grid-area: nave;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    padding: 0.93em;
+}
+
+.navegacao > a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.3rem;
+    padding: 0.31em 0.625em;
+    margin-right: 1.25em;
+}
+
+.navegacao a:hover {
+    border: solid 0.15em #fff;
+    border-radius: 0.31em;
+}
+
+.navegacao> a.laranja {
+    background-color: orange;
+    border-radius: 0.31em;
+    color: #fff;
+}
+
+.navegacao a.laranja:hover {
+    color: #000;
+}
+
+.conteudo {
+    font-size: 1.3rem;
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #fff;
+    padding: 3.125em;
+    box-shadow: 0 0 1.25em 0 #000;
+}
+
+.conteudo .titulo {
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding-bottom: 0.625em;
+    margin-bottom: 1.25em;
+}
+
+.principal {
+    grid-area: prin;
+    height: calc(90vh - 87px);
+    background-color: antiquewhite;
+    padding: 1.25em;
+}
+
+.rodape {
+    grid-area: roda;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.2rem;
+    position: relative;
+    padding-right: 1.25em;
+}

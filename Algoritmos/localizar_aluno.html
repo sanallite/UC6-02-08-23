@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localizador</title>
+</head>
+<body>
+    <h1>Encontrando um nome</h1>
+
+    <script>
+        const alunos= ["Márcio", "Paulo", "Heitor", "Aliffer", "Cayuri", "Davi", "Giovanni", "Eloisa"];
+
+        const medias= [10, 6, 9.5, 9.5, 8, 7, 6, 7];
+
+        const listaDeAlunosEMedias= [alunos, medias];
+
+        function exibirNomeENota(aluno) {
+            if (listaDeAlunosEMedias[0].includes(aluno)) {
+                const [alunos, medias]= listaDeAlunosEMedias;
+                const indice= alunos.indexOf(aluno);
+                const mediaDoAluno= medias[indice];
+                document.write(aluno, " tem a média ", mediaDoAluno);
+            }
+            
+            else {
+                document.write("Aluno não encontrado!");
+            }
+        }
+
+        exibirNomeENota("Aliffer");
+    </script>
+</body>
+</html>

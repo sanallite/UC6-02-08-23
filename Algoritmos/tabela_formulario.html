@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Alunos</title>
+
+    <style>
+        marquee table td, marquee table tr{ padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Listando informações do formulário</h1>
+
+    <form onsubmit="GravarDados(); return false;">
+        <label for="nome">Nome:</label>
+        <input type="text" name="" id="nome" required>
+
+        <label for="nome">E-mail:</label>
+        <input type="text" name="" id="email" required>
+
+        <label for="nome">Telefone:</label>
+        <input type="text" name="" id="telefone" required>
+        
+        <button type="submit">Enviar</button>
+
+        <hr>
+
+        <marquee behavior="slide" direction="right" scrollamount="50" loop="10">
+
+        <table id="tabela" border="1">
+
+        </table>
+        </marquee>
+        <script>
+            function GravarDados() { var nome= document.getElementById("nome").value;
+                var email= document.getElementById("email").value;
+                var telefone= document.getElementById("telefone").value;
+
+                var tabela= document.getElementById("tabela");
+                var linha= tabela.insertRow();
+
+                var cellNome= linha.insertCell();
+                var cellEmail= linha.insertCell();
+                var cellTelefone= linha.insertCell();
+
+                cellNome.innerHTML= nome;
+                cellEmail.innerHTML= email;
+                cellTelefone.innerHTML= telefone;
+            }
+        </script>
+    </form>
+</body>
+</html>

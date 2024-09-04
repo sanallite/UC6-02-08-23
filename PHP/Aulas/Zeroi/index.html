@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zéroi - Manutenção condominial</title>
+    <link rel="stylesheet" href="estilo.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
+    
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Alguns elementos br serão usados apenas provisóriamente. -->
+
+    <!-- As sections conteúdo o conteúdo que será exibido na divisão main, que ocupará o maior espaço da tela -->
+
+    <header>
+        <a href="index.html">
+            <img src="img/originais/logo.png" alt="Logotipo Zérói">
+        </a>
+
+        <h1>Manutenção Condominial</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#confiar">Porque confiar na Zérói</a></li>
+            <li><a href="">Solicite uma visita</a></li>
+            <li><a href="">Contatos</a></li>
+            <li><a href="#cadastro">Cadastre-se</a></li>
+            <li><a href="">Área do cliente</a></li>
+            <li><a href="">Área do síndico</a></li>
+            <li><a href="">Área do condômino</a></li>
+            <li><a href="#artigos">Dicas úteis</a></li>
+        </ul>
+
+        <h3>Rua Dr. Manoel Francisco Ferreira Correia, 620 - Portão, Curitiba, PR<br>
+            CEP: 81320-260<br><br>
+            Contatos:<br>
+            Paulo: (41) 91111-1111<br>
+            Márcio (41) 92222-2222<br><br>
+            E-mail: zeroicondominial@zeroi.com.br
+        </h3>
+    </nav>
+
+    <aside>
+        <a href="">
+            <img src="img/cortadas/presente.jpg" alt="Presente com embalagem branca e laço vermelho">
+
+            <p>Um presente de boas vindas pra você!</p>
+        </a>
+    </aside>
+
+    <main>
+        <section id="inicial">
+            <a href="#alvenaria" id="inicialAlvenaria">
+                <h2>Alvenaria, Pisos e Azulejos</h2>
+            </a>
+
+            <a href="#pintura" id="inicialPintura">
+                <h2>Pinturas, Texturas e Grafiato</h2>
+            </a>
+
+            <a href="#eletrica" id="inicialEletrica">
+                <h2>Elétrica e <br>Hidráulica</h2>
+            </a>
+
+            <a href="#gas" id="inicialGas">
+                <h2>Aquecedores e Ar Condicionados</h2>
+            </a>
+
+            <a href="#portao" class="segundaLinha" id="inicialPortao">
+                <h2>Portões e portas automatizadas</h2>
+            </a>
+
+            <a href="#cerca" class="segundaLinha" id="inicialCerca">
+                <h2>Cercas Elétricas e Sistema de câmeras</h2>
+            </a>
+
+            <a href="#limpeza" class="segundaLinha" id="inicialLimpeza">
+                <h2>Limpeza e Jardinagem</h2>
+            </a>
+
+            <a href="#adm" class="segundaLinha" id="inicialAdm">
+                <h2>Adminstração de condomínios</h2>
+            </a>
+        </section>
+
+        <section id="confiar">
+            <h2>Porque Confiar na Nossa Equipe?</h2>
+
+            <article>
+                <div id="marcio">
+                    <img src="img/originais/marcio.jpg" alt="Márcio"><br>
+                    <span>
+                        MÁRCIO<br>
+                        Eu sou o mãos a obra.<br>
+                        Na segunda a gente pega no tranco... mas depois vai.
+                    </span>
+                </div>
+
+                <div id="citacao">
+                    <blockquote>É o que o cliente nos pede</blockquote>
+                    <blockquote>A satisfação do trabalho bem feito</blockquote>
+                </div>
+
+                <div id="paulo">
+                    <img src="img/originais/paulo.png" alt="Paulo"><br>
+                    <span>
+                        PAULO<br>
+                        Eu cuido do financeiro.<br>
+                        Olha a minha cara de brabo.
+                    </span>
+                </div>
+
+                <div id="textosConfiar">
+                    <p>
+                        O nome da empresa (ZÉrói) representa um desafio ao uso intensivo de termos em inglês e imagens
+                        copiadas da internet para dar um aspecto “clean” aos sites e às empresas que representam.
+                        ZÉ é o José, brasileiro, de estatura mediana ... Também tem o Chico, o Naldo, o Beto (isso é do meu
+                        tempo de “piá”). São esses os apelidos de brasileiros que “fazem”.
+                        O Zé + o 0 (zero) constroem o ZÉrÓi, que representa todos os super-heróis brasileiros, sem capa nem
+                        superpoderes (zero super-poderes, “é na unha!”), que “só” trabalham. Esses ZÉrÓis da nossa equipe
+                        são os que realizam, com conhecimento, treinamento, dedicação e muita experiência, o que você mais
+                        deseja: um serviço bem feito.
+                        Nossa satisfação plena.
+                    </p>
+                    <p>
+                        Os anos vão se passando e, como pra todo mundo, sem exceção, cheios de altos e baixos... Normal!...
+                        não é mesmo?! ... E, em casa, muita coisa pra consertar, sempre.
+                        E por falar nisso, o nosso trabalho é esse: consertar. Treinamos muito para que as coisas fluam bem
+                        e a gente sempre faça nosso trabalho beirando à perfeição.. Essa é a nossa realização profissional.
+                        Na ZÉrÓi, somos incansáveis na busca dessa quase-perfeição, para receber do cliente aquele
+                        comentário que massageia o ego de qualquer pessoa que gosta do que faz: “Do jeito que eu queria!”
+                        Foi pra isso que isso que nos juntamos numa equipe afinada com essa busca.
+                    </p>
+                    <h3>Venha sentir com a gente a satisfação de um trabalho bem feito!
+                        Afinal, o nosso cantinho de viver tem de ser o da tranquilidade também!
+                    </h3>
+                </div>
+                
+                <div id="condosParceiros">
+                    <h2>Este pessoal ↓ trabalha com a gente há mais de 5 anos. Converse com eles.</h2>
+
+                    <div id="primeiroCondo">
+                        <h3>Primeiro Condomínio</h3>
+                        <hr>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque perspiciatis quo repellat corrupti animi dolores sit officia dignissimos quibusdam architecto minus, dolorum voluptate. Molestiae tempore impedit, autem rem dolorum sed!<br><br>
+                    
+                            Et quidem fugiat, aliquam explicabo in sapiente dignissimos aperiam magni provident nisi. Architecto voluptate amet quo! Voluptate cupiditate accusamus, maiores repellendus praesentium corporis odio cumque saepe, asperiores nemo ab eius!
+                        </p>
+                    </div>
+
+                    <div id="anteriorPosterior">
+                        <a class="anterior" href="">&#10094;</a>
+                        <a class="posterior" href="">&#10095;</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="cadastro">
+            <h2>Cadastro</h2>
+            <p id="botoesCadastro">
+                <input type="button" value="Clientes" onclick="abrirJanela('cadastrocl')">
+                <input type="button" value="Condominios" onclick="abrirJanela('cadastrocd')">
+                <input type="button" value="Já é cliente?" onclick="abrirJanela('login')">
+            </p>
+            <form id="clientes">
+                <!-- Glossário:
+                    ids com final em "cl" indicam que são relacionados ao cliente.
+                    ids com final em "cd" indicam que são relacionados ao condomínio.
+                    finais com pr são parâmetros das funções.
+                -->
+
+                <fieldset>
+                    <h3>Clientes</h3>
+
+                    <p>
+                        <label for="nomecl">Nome:</label>
+                        <input type="text" name="nomecl" required onchange="armazenarDados('nomeclpr')" class="maiorescl">
+                    </p>
+
+                    <p>
+                        <label for="emailcl">Email:</label>
+                        <input type="email" name="emailcl" required onchange="armazenarDados('emailclpr')" class="maiorescl">
+                    <p></p></p>
+
+                    <p>
+                        <label for="telefonecl">Telefone:</label>
+                        <input type="tel" name="telefonecl" required onchange="armazenarDados('telefoneclpr')" class="menorescl">
+                    </p>
+
+                    <p>
+                        <label for="residencia">Residência:</label>
+                        <select name="residencia" onchange="armazenarDados('residenciapr')" class="menorescl">
+                            <option value="">Selecione</option>
+                            <option value="casa">Casa</option>
+                            <option value="condo">Condomínio</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="profissao">Profissão:</label>
+                        <select name="profissao" onchange="armazenarDados('profissaopr')" class="menorescl">
+                            <option value="">Selecione</option>
+                            <option value="tecmtn">Técnico de manutenção</option>
+                            <option value="marceneiro">Marceneiro</option>
+                            <option value="pedreiro">Pedreiro</option>
+                            <option value="encanador">Encanador</option>
+                            <option value="eletricista">Eletricista</option>
+                            <option value="engenheiro">Engenheiro</option>
+                            <option value="pintor">Pintor</option>
+                            <option value="zelador">Zelador</option>
+                            <option value="gerente">Gerente de empresa</option>
+                            <option value="assisteadm">Assistente administrativo</option>
+                            <option value="sindico">Síndico</option>
+                            <option value="outra">Outra</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="cepcl">CEP:</label>
+                        <input type="text" name="cepcl" onchange="armazenarDados('cepclpr')" class="menorescl">
+                    </p>
+
+                    <p>
+                        <label for="enderecocl">Endereço:</label>
+                        <input type="text" name="enderecocl" onchange="armazenarDados('enderecoclpr')" class="maiorescl">
+                    </p>
+
+                    <p>
+                        <label for="senhacl">Crie uma senha:</label>
+                        <input type="password" name="senhacl" required class="menorescl">
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Cadastrar" onclick="mensagem('cadastro')">
+                    </p>
+                </fieldset>
+            </form>
+
+            <form id="condominios">
+                <fieldset>
+                    <h3>Condomínios</h3>
+                    <p>
+                        <label for="razaocd">Razão Social do Condomínio:</label>
+                        <input type="text" name="razaocd" onchange="armazenarDados('razaocdpr')" class="maiorescd">
+                    </p>
+                    <p>
+                        <label for="cepcd">CEP:</label>
+                        <input type="text" name="cepcd" required onchange="armazenarDados('cepcdpr')" class="menorescd">
+                    </p>
+                    <p>
+                        <label for="enderecocd">Endereço:</label>
+                        <input type="text" name="enderecocd" required onchange="armazenarDados('enderecocdpr')" class="maiorescd">
+                    </p>
+                    <p>
+                        <label for="nomesindico">Nome do Síndico:</label>
+                        <input type="text" name="nomesindico" required onchange="armazenarDados('nomesindicopr')" class="maiorescd">
+                    </p>
+                    <p>
+                        <label for="telefonecd">Telefone do Síndico:</label>
+                        <input type="text" name="telefonecd" required onchange="armazenarDados('telefonecdpr')" class="menorescd">
+                    </p>
+                    <p>
+                        <label for="emailcd">E-mail do Síndico:</label>
+                        <input type="text" name="emailcd" required onchange="armazenarDados('emailcdpr')" class="maiorescd">
+                    </p>
+                    <p>
+                        <label for="numeroaps">Número de Apartamentos:</label>
+                        <input type="number" name="numeroaps" onchange="armazenarDados('numeroapspr')" class="menorescd">
+                    </p>
+                    <p>
+                        <label for="numoradores">Número de moradores:</label>
+                        <input type="number" name="numoradores" onchange="armazenarDados('numoradorespr')" class="menorescd">
+                    </p>
+                    <p>
+                        <label for="senhacd">Crie uma senha:</label>
+                        <input type="password" name="senhacd" required class="menorescd">
+                    </p>
+                    <p>
+                        <input type="submit" value="Cadastrar" onclick="mensagem('cadastro')">
+                    </p>
+                </fieldset>
+            </form>
+
+            <form action="login.php" method="post" id="login">
+                <fieldset>
+                    <h3>Iniciar Sessão</h3>
+                    <p>
+                        <input type="radio" name="opcao" value="logincliente">
+                        <label for="opcaocl">Cliente</label>
+                        <input type="radio" name="opcao" value="logincondo">
+                        <label for="opcaocd">Condomínio</label>
+                    </p>
+                    <p>
+                        <input type="email" name="entraremailcl" placeholder="E-mail">
+                    </p>
+                    <p>
+                        <input type="password" id="entrarsenhacl" name="entrarsenhacl" placeholder="Senha">
+                    </p>
+                    <p>
+                        <input type="submit" value="Entrar">
+                    </p>
+                </fieldset>
+            </form>
+
+            <p id="msgCadastro"></p>
+            <p id="msgLogin"></p>
+        </section>
+
+        <section id="artigos">
+            <h2>Dicas úteis e Reflexões</h2>
+
+            <div id="videosArtigos">
+                <article id="articleVideos">
+                    <!-- Parágrafos provisórios até que sejam adicionados os vídeos em sí -->
+                    <h3>Vídeos</h3>
+
+                    <div class="videos">
+                        <img src="img/cortadas/chuveiro.jpg" alt="Chuveiro Elétrico">
+                        <p>O chuveiro elétrico é grande aliado na economia de água e, eletricidade x gás, também fica mais barato</p>
+                    </div>
+
+                    <div class="videos">
+                        <img src="img/cortadas/sifao.png" alt="Sifão de pia">
+                        <p>Cheiro ruim no banheiro e na cozinha: troque os sifões</p>
+                    </div>
+
+                    <div class="videos">
+                        <img src="img/cortadas/lixao.jpg" alt="Pessoas catando lixo em um lixão de Curitiba">
+                        <p>A situação nos lixões em Curitiba poderia ser bem menos preocupante</p>
+                    </div>
+
+                    <div class="videos">
+                        <img src="img/cortadas/tecnologia.png" alt="Mulher com chapéu protetor em um fundo com gráficos fictícios">
+                        <p>A tecnologia avança... Temos de nos atualizar também</p>
+                    </div>
+
+                    <p id="maisVideos">
+                        <a href="videos.html">Mais Vídeos</a>
+                    </p>
+                </article>
+
+                <article id="articleArtigos">
+                    <h3>Artigos</h3>
+
+                    <p>
+                        <a href="artigo.html">O que você não sabe sobre as “outras” funções dos parques de Curitiba</a>
+                    </p>
+
+                    <p>
+                        <a href="">A captação de água da chuva é mais importante do que você pensa!</a>
+                    </p>
+
+                    <p>
+                        <a href="">Ah! A separação do lixo!!! Que trabalheira!!!
+                            Será que vale a
+                            pena ?!</a>
+                    </p>
+
+                    <p>
+                        <a href="">O seu condomínio ainda tem tubulação de ferro na rede de gás?! Perigo !!!</a>
+                    </p>
+
+                    <p id="maisArtigos">
+                        <a href="">Mais Artigos</a>
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="alvenaria">
+            <h2 class="sectionTitulo">Alvenaria, Pisos e Azulejos</h2>
+
+            <div class="articleDuasColunas">
+                <article id="articleAlvenaria">
+                    <h3>Alvenaria</h3>
+                    <img src="img/cortadas/alvenaria.jpg" alt="Parede em construção com tijolos e cimento" class="articleDuasColunas">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores voluptates, illo amet est ex saepe quidem nesciunt sequi enim aliquam aut officia earum consequatur, dolore consectetur facilis! Vero, tempora repellat?<br><br>
+                        Harum a quaerat similique atque provident sint autem nobis! Delectus similique omnis expedita fugit iure nihil enim, facilis obcaecati excepturi, adipisci voluptas quod aperiam. Eos quas sed porro rem similique?<br><br>
+                
+                        Quae facere ea consequuntur. Molestiae, error facilis? Alias voluptatum qui enim voluptate laudantium ullam eveniet rerum ducimus nihil facere perferendis, quaerat molestias, esse fugiat debitis. Corrupti quaerat consequuntur velit aliquam?
+                    </p>
+                </article>
+
+                <article id="articleAzulejo">
+                    <h3>Pisos e Azulejos</h3>
+                    <img src="img/cortadas/azulejo.jpg" alt="Profissional colocando azulejos em um piso" class="articleDuasColunas">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit cum placeat explicabo excepturi ab voluptatum libero tenetur, fugiat distinctio soluta quia, repellendus incidunt exercitationem autem temporibus quasi? Iure, earum hic?<br><br>
+                    Distinctio, fuga minus tenetur nihil nemo non, pariatur veritatis id est reprehenderit itaque ratione esse, provident voluptas suscipit veniam repellat aliquam doloremque debitis eius. In quasi sit repudiandae sunt aliquam?<br><br>
+                    Voluptatibus facere quaerat eius placeat totam atque fuga. Rem quas quos, cupiditate minima dolorem officiis unde voluptate neque earum repellat deserunt optio? Eos eaque error quis atque cum, fugit sapiente?</p>
+                </article>
+            </div>
+
+            <p class="contrate">
+                <a href="">Contrate um serviço dessa área</a>
+            </p>
+        </section>
+
+        <section id="pintura">
+            <h2 class="sectionTitulo">Pinturas, Texturas e Grafiato</h2>
+
+            <div id="pinturaColunas">
+                <article id="articlePintura">
+                    <h3>Pinturas</h3>
+                    <img src="img/cortadas/pintor.jpg" alt="Pintor pintando uma parede externa" class="articleDuasColunas">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quod doloribus dolorum, atque maiores consectetur incidunt corrupti modi enim necessitatibus excepturi ad veniam, illum deserunt facilis officiis dicta non culpa.<br><br>
+                        Quos, enim ipsum explicabo totam ipsa facilis. Fuga laudantium deleniti, impedit blanditiis temporibus perspiciatis quas at placeat! Numquam eum, vitae officia dolores, minima aperiam ratione explicabo id dignissimos obcaecati omnis.<br><br>
+                        Odio fugit iusto, saepe nobis molestiae ex, voluptates debitis, aliquid asperiores eos quis magnam nesciunt. Dolores dicta ea asperiores, vero eveniet possimus dignissimos, sit distinctio illum mollitia unde nisi veniam.
+                    </p>
+                </article>
+                <article id="articleTextura">
+                    <h3>Texturas e Grafiato</h3>
+                    <img src="img/cortadas/grafiato.jpg" alt="Parede de cor bege com grafiato aplicado" class="articleDuasColunas">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eveniet reiciendis perspiciatis sit facere repellendus adipisci quod modi similique! Quo excepturi sequi rem animi et deleniti veniam repellendus blanditiis ipsam.<br><br>
+                        Molestiae harum repellat eius quasi tempore, praesentium sint exercitationem? Perferendis illo modi, similique eveniet laborum veniam amet beatae molestiae doloremque eum ratione vero asperiores repellat quas molestias pariatur. Accusantium, rem.<br><br>
+                        Pariatur, nesciunt consectetur ipsum architecto, harum sint iure aut quisquam perferendis aliquid repellendus doloremque ab vero incidunt iusto necessitatibus unde facilis cum quibusdam ad neque assumenda in! Laudantium, distinctio incidunt.
+                    </p>
+                </article>
+            </div>
+
+            <p class="contrate">
+                <a href="">Contrate um serviço dessa área</a>
+            </p>
+        </section>
+
+        <section id="eletrica">
+            <h2 class="sectionTitulo">Elétrica e Hidráulica</h2>
+
+            <div id="eletricaColunas">
+                <article id="articleEletrica">
+                    <h3>Elétrica</h3>
+                    <img src="img/cortadas/eletrica.png" alt="Manutenção de sistema elétrico" class="articleDuasColunas">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, molestias provident minus tenetur sapiente nam, atque ab voluptatibus officiis rem dignissimos perferendis quibusdam aliquam repudiandae, nemo laborum quis cumque error.<br><br>
+                        Ut dolores autem asperiores vel, atque, officiis sunt assumenda harum soluta laboriosam consequatur sapiente neque, qui dicta rem. Reprehenderit vero neque facere voluptatum inventore natus quae harum, veritatis modi voluptate?<br><br>
+                        Quisquam quia consequatur sequi deleniti voluptas molestiae voluptatem aspernatur modi debitis, aliquam obcaecati reiciendis. Iusto facilis amet quia dignissimos minima illo, culpa doloribus at tempore delectus, nulla laborum vitae provident?
+                    </p>
+                </article>
+                <article id="articleHidraulica">
+                    <h3>Hidráulica</h3>
+                    <img src="img/cortadas/hidraulica.jpg" alt="Ferramentas de hidráulica residencial" class="articleDuasColunas">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, deserunt iste dolores sapiente iure molestiae nam impedit odio vel iusto fuga error? Voluptatibus consequuntur quis facere illo vero? Ex, dolorum.<br><br>
+                        Hic soluta, aliquam nulla dolore adipisci non veritatis fuga veniam ad corrupti quisquam commodi totam magni error quae assumenda neque suscipit eligendi perspiciatis! Molestias dignissimos commodi laudantium sint praesentium quos.<br><br>
+                        Ad expedita libero eveniet maxime culpa quae dolorem reiciendis laborum, ut perspiciatis, labore magnam accusantium excepturi! Repudiandae laborum rerum aliquid fugit cum dolores ab? Enim deserunt iusto molestias error id.
+                    </p>
+                </article>
+            </div>
+
+            <p class="contrate">
+                <a href="">Contrate um serviço dessa área</a>
+            </p>
+        </section>
+
+        <section id="gas">
+            <h2 class="sectionTitulo">Redes de gás, Aquecedores e Ar Condicionados</h2>
+
+            <div class="articleTresColunas">
+                <article id="redeGas">
+                    <h3>Redes de gás</h3>
+                    <img src="img/cortadas/tubulacao.jpg" alt="Tubulações de gás natural" class="articleTresColunas">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam facilis veritatis quas ducimus temporibus dignissimos, deleniti magnam. Pariatur, excepturi deleniti. Odit natus accusamus ipsam quasi tempora excepturi sit asperiores cupiditate.<br><br>
+                        Assumenda vitae delectus mollitia ex quasi labore unde aliquam? Qui sunt aliquid sed culpa voluptates sit possimus, pariatur, velit, repellat esse facilis quis quam adipisci corrupti error perspiciatis tenetur ratione.<br><br>
+                        Ea minima reprehenderit hic omnis tenetur sunt autem iure placeat aspernatur, a commodi pariatur, velit tempora recusandae. Quis doloremque sed nemo velit sequi, enim unde aliquam nobis fugit mollitia labore.[
+                    </p>
+                </article>
+                <article id="aquecedores">
+                    <h3>Aquecedores</h3>
+                    <img src="img/cortadas/aquecedor.jpg" alt="Aquecedor à gás" class="articleTresColunas">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam id asperiores at dignissimos adipisci eveniet accusantium dolorem, laborum commodi nostrum rem consectetur! Minima mollitia excepturi, modi tenetur tempora voluptates harum.<br><br>
+                        Quasi, tenetur voluptatem temporibus beatae modi omnis iusto ea minus, aspernatur aut eligendi vero nobis veniam enim tempora at accusantium iure quia doloribus. Dolores sunt repellat deleniti eveniet nostrum ipsum?<br><br>
+                        Totam, sit repudiandae. Amet soluta praesentium nemo quas illum sapiente distinctio placeat doloribus libero in quis qui neque quam excepturi eius id harum perspiciatis quae architecto commodi, vel velit maiores?
+                    </p>
+                </article>
+                <article id="arCondicionado">
+                    <h3>Ar Condicionados</h3>
+                    <img src="img/cortadas/arcondicionado.jpg" alt="Profissional fazendo instalação de um ar condicionado" class="articleTresColunas">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, enim debitis eveniet culpa recusandae architecto unde magni blanditiis quae numquam necessitatibus fuga eos voluptas asperiores cum commodi ab obcaecati similique?<br><br>
+                        Consectetur tempore possimus provident sit voluptates omnis ipsa minima! Beatae odio totam accusantium illum at neque consequatur non odit? Sit, incidunt quis illo molestias ad dolores repudiandae ducimus animi optio.<br><br>
+                        Ipsum reprehenderit mollitia architecto repudiandae ut modi, recusandae quia temporibus harum unde voluptate perferendis debitis quidem quo eius doloribus ratione, eaque eum libero odit sunt placeat dolores! Libero, dolore repudiandae.
+                    </p>
+                </article>
+            </div>
+
+            <p class="contrate">
+                <a href="">Contrate um serviço dessa área</a>
+            </p>
+        </section>
+
+        <section id="portao">
+            <h2 class="sectionTitulo">Portões e Portas Automáticas</h2>
+
+            <div id="portaoColunas">
+                <article id="articlePortao">
+                    <h3>Portões</h3>
+                    <img src="img/cortadas/portao.jpg" alt="Exemplo de portôes" class="articleDuasColunas">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, dolor. Iste quidem non voluptatum, culpa et officia excepturi, quos provident alias cumque voluptates debitis deserunt tempore saepe eius sapiente suscipit.<br><br>
+                        Veniam dolorem ipsa cumque consequatur qui alias consequuntur, sint nulla necessitatibus, quaerat facere asperiores saepe accusantium corporis aspernatur quas vero, non distinctio aperiam itaque quidem aut ipsam? Eum, maiores vitae.<br><br>
+                        Esse mollitia at autem debitis. Voluptas tempore repellendus sapiente temporibus doloremque culpa iste odit eum nostrum, cum earum esse a distinctio dolorem nemo labore eaque officia non minus facilis deleniti.
+                    </p>
+                </article>
+                <article id="portaAuto">
+                    <h3>Portas Automáticas</h3>
+                    <img src="img/cortadas/portaauto.jpg" alt="Porta de vidro automática" class="articleDuasColunas">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur expedita, odio veniam debitis omnis explicabo aperiam totam, distinctio, veritatis vero praesentium itaque quo labore quisquam minima ducimus maiores repudiandae architecto!<br><br>
+                        Minus, autem laboriosam, harum velit illum iste voluptates earum, non recusandae esse omnis. Ullam fugit ut facilis! Maxime similique, velit possimus assumenda qui unde. Sed cumque mollitia voluptatum enim architecto?<br><br>
+                        Voluptatum at sed aliquid illum quasi? Officiis dicta id facilis doloremque atque nemo similique perferendis inventore, modi aut? Id voluptate doloremque vero veritatis facere tempora dignissimos, odio est similique ipsa!
+                    </p>
+                </article>
+            </div>
+
+            <p class="contrate">
+                <a href="">Contrate um serviço dessa área</a>
+            </p>
+        </section>
+
+        <section id="cerca">
+            <h2 class="sectionTitulo">Cercas elétricas e sistema de câmeras</h2>
+
+            <div id="cercaColunas">
+                <article id="articleCerca">
+                    <h3>Cercas elétricas</h3>
+                    <img src="img/cortadas/cercaeletrica.jpeg" alt="Profissional instalando uma cerca elétrica" class="articleDuasColunas">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe nesciunt nam illo, hic delectus vel facere autem eligendi necessitatibus provident. Nisi aut ipsa eveniet ea recusandae quidem quos quas quia.<br><br>
+                        Cum sequi laboriosam consectetur quis quas sapiente impedit ad dolores animi! Eum quod cum pariatur, fuga illum dolore quaerat nihil eius veritatis, facilis fugiat. Animi voluptatem a id velit quod!<br><br>
+                        Molestiae natus, dolore quasi ab quae odio, repellendus, aliquam sequi rerum deleniti ipsa a dolorem excepturi minima officia nostrum aspernatur debitis blanditiis! Magnam adipisci commodi numquam dolores aut, iure nesciunt?
+                    </p>
+                </article>
+                <article id="sistemaCam">
+                    <h3>Sistemas de câmeras</h3>
+                    <img src="img/cortadas/cameraseg.jpg" alt="Câmera de segurança" class="articleDuasColunas">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe nesciunt nam illo, hic delectus vel facere autem eligendi necessitatibus provident. Nisi aut ipsa eveniet ea recusandae quidem quos quas quia.<br><br>
+                        Cum sequi laboriosam consectetur quis quas sapiente impedit ad dolores animi! Eum quod cum pariatur, fuga illum dolore quaerat nihil eius veritatis, facilis fugiat. Animi voluptatem a id velit quod!<br><br>
+                        Molestiae natus, dolore quasi ab quae odio, repellendus, aliquam sequi rerum deleniti ipsa a dolorem excepturi minima officia nostrum aspernatur debitis blanditiis! Magnam adipisci commodi numquam dolores aut, iure nesciunt?
+                    </p>
+                </article>
+            </div>
+
+            <p class="contrate">
+                <a href="">Contrate um serviço dessa área</a>
+            </p>
+        </section>
+
+        <section id="limpeza">
+            <h2 class="sectionTitulo">Limpeza e Jardinagem</h2>
+
+            <div id="limpezaColunas">
+                <article id="articleLimpeza">
+                    <h3>Limpeza</h3>
+                    <img src="img/cortadas/limpeza.jpg" alt="Profissionais de limpeza trabalhando" class="articleDuasColunas">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, autem sequi ducimus perferendis nulla enim nemo maxime dolores ipsa quas quod esse consequatur veniam, exercitationem, aliquam voluptates sunt dicta ipsam.<br><br>
+                        Praesentium, exercitationem! Architecto sed non consectetur voluptates totam ducimus, id repellat molestias dolor molestiae esse iure soluta at repellendus inventore optio? Et sapiente similique voluptatem necessitatibus nobis neque quod modi!<br><br>
+                        Reiciendis deserunt eos deleniti quos, perspiciatis modi id soluta odit ea impedit saepe illo possimus aut quis voluptatibus, sit a blanditiis neque autem facilis veritatis cum assumenda vero. Distinctio, nobis.
+                    </p>
+                </article>
+                <article id="jardinagem">
+                    <h3>Jardinagem</h3>
+                    <img src="img/cortadas/jardinagem.jpg" alt="Carrinho e pá de jardinagem em um jardim" class="articleDuasColunas">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sint, facere labore dolores delectus nam eos, libero quisquam fugit odio quas aspernatur asperiores explicabo officia voluptatum eaque! Vero, ipsum enim.<br><br>
+                        Sequi sed, similique illum provident culpa officiis fuga. Quia velit nihil, quos numquam eos ipsam corporis eligendi aliquam. Eligendi suscipit laborum beatae repellendus cumque quae ipsam quo necessitatibus quisquam porro.<br><br>
+                        Eos dicta autem, laborum nesciunt similique fugiat dignissimos distinctio velit voluptatem vero quo? Nesciunt ipsam cumque id, inventore cum dolorum pariatur sed at voluptates dolores fugiat, reiciendis repudiandae error illo.
+                    </p>
+                </article>
+            </div>
+
+            <p class="contrate">
+                <a href="">Contrate um serviço dessa área</a>
+            </p>
+        </section>
+
+        <section id="adm">
+            <h2 class="sectionTitulo">Administração de condomínios</h2>
+
+            <div id="admColunas">
+                <article id="acessoria">
+                    <h3>Acessoria</h3>
+                    <img src="img/cortadas/acessoria.jpeg" alt="Um homem e uma mulher fazendo acessoria administrativa para um cliente, utilizando um tablet" class="articleTresColunas">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat assumenda illum ut officiis itaque, excepturi quas libero debitis nostrum a ipsam enim quam odio voluptas culpa laboriosam ullam natus veniam?<br><br>
+                        Veritatis similique sit dolores laboriosam illum necessitatibus nobis reprehenderit laborum quam temporibus aut, unde, soluta est quaerat enim voluptatum ratione quod iusto expedita sunt aperiam eos voluptas ullam corporis. Aut.<br><br>
+                        Quam laudantium magnam voluptas ab modi. Nostrum inventore atque voluptatum consequatur ipsam corrupti ipsa totam itaque accusamus soluta nihil minus omnis, quod dolores unde adipisci facere? Culpa sit dolore ab!
+                    </p>
+                </article>
+                <article id="contabilidade">
+                    <h3>Contabilidade</h3>
+                    <img src="img/cortadas/contabilidade.jpg" alt="Um notebook, papéis e uma calculadora, com um profissional trabalhando" class="articleTresColunas">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore recusandae voluptatibus aliquam velit. Provident ipsa modi corporis maiores ducimus, vero fugit. Quam quibusdam, iusto qui nisi totam nam rem consectetur.<br><br>
+                        Delectus, quos. Dolor quod obcaecati perferendis deserunt odit aut architecto sint dolores est placeat aliquid, totam ratione nesciunt sapiente ab earum quidem molestias consequuntur consectetur autem? Perferendis, praesentium! Ab, cum.<br><br>
+                        Iste, explicabo autem et laborum cumque consequuntur magnam eos expedita voluptate vitae quod sapiente dignissimos necessitatibus voluptatem perferendis repudiandae neque impedit quo accusantium laboriosam dolor corrupti dolore adipisci. Eveniet, vel.
+                    </p>
+                </article>
+                <article id="logistica">
+                    <h3>Logística</h3>
+                    <img src="img/cortadas/logistica.png" alt="Profissional fazendo anotações em um estoque empresarial" class="articleTresColunas">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni consectetur sed nobis ipsum, at totam cupiditate, illum quo voluptas dignissimos odit fugiat maxime quas cum? Cupiditate quaerat cum excepturi quam!<br><br>
+                        Sint quibusdam voluptatum veniam. Magni est quos, accusantium provident minima pariatur voluptatibus minus nesciunt qui architecto aspernatur, asperiores eum eius, temporibus aperiam fugiat eveniet? Sunt, amet animi? Consequuntur, sint porro.<br><br>
+                        Quaerat atque, incidunt minus omnis rerum assumenda quam beatae placeat iste sunt sequi a asperiores? Deleniti rerum corporis optio consectetur illum ab! Sapiente quisquam deleniti quae inventore magni? Id, quibusdam?
+                    </p>
+                </article>
+            </div>
+
+            <p class="contrate">
+                <a href="">Contrate um serviço dessa área</a>
+            </p>
+        </section>
+
+        <div class="voltar">
+            <a href="#inicial">Voltar ao topo</a>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas de alunos</title>
+</head>
+<body>
+    <h1>Calculando a média de um aluno de novo...</h1>
+
+    <input type="button" value="Iniciar" onclick="mediaNota()">
+
+    <script>
+        function mediaNota() { let nota1= Number(prompt("Nota do primeiro bimestre"));
+            let nota2= Number(prompt("Nota do segundo bimestre"));
+            let nota3= Number(prompt("Nota do terceiro bimestre"));
+            let nota4= Number(prompt("Nota do quarto bimestre"));
+
+            let totalNotas= nota1+nota2+nota3+nota4;
+
+            let media= totalNotas/4;
+
+            if (media>=7) { document.write(media+ "<br>Aprovado");
+            }
+
+            else if (media>=4 && media <7) { document.write(media+ "<br>Recuperação");
+            }
+
+            else { document.write(media+ "<br>Reprovado");
+            }
+        }
+    </script>
+</body>
+</html>

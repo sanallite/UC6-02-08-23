@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Par ou Impar</title>
+</head>
+<body>
+    <script>
+        let numero=Number(prompt("Digite um número"));
+        let verificador= numero%2;
+        /* % significa o resto da divisão, então se o resto da divisão do número por dois for zero, esse número será um par, se não ímpar */
+
+        if (verificador === 0) {
+            document.write("Par");
+        }
+
+        else { document.write("Impar");
+        }
+    </script>
+</body>
+</html>

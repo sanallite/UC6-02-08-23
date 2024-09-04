@@ -1,0 +1,845 @@
+body { background-image: url(img/originais/fundotopo.png), url(img/originais/fundoesq.png), url(img/originais/fundodir.png);
+    background-size: contain, 35px, 35px;
+    background-repeat: no-repeat, repeat-y, repeat-y;
+    background-position: top, top left, top right;
+    background-color: antiquewhite;
+    font-family: 'Raleway', sans-serif;
+    display: grid;
+    margin: 0 auto;
+    width: 80%;
+    padding: 0;
+    grid-template-columns: 7fr 2fr;
+    grid-template-rows: 16vh 14vh 70vh;
+    grid-template-areas: "h a a" "m a a" "m n n";
+    overflow-y: hidden;
+}
+
+/* Corpo das páginas videos e artigos*/
+body#pgVideos, body#pgArtigos { display: grid;
+    grid-template-columns: 7fr 2fr;
+    grid-template-rows: 16vh 14vh 70vh;
+    grid-template-areas: "h n n" "m n n" "m n n";
+}
+
+a { text-decoration: none;
+}
+
+header { display: grid;
+    grid-area: h;
+    grid-template-columns: 1fr 9fr;
+    grid-template-areas: "logo titulo";
+}
+
+header a { text-align: center;
+    grid-area: logo;
+    height: 33%;
+    width: 100%;
+    margin-top: 75%;
+}
+
+header a img { width: 100%;
+    height: 100%;
+    border-radius: 0.2em;
+}
+
+header h1 { display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: titulo;
+    margin: 8.4% auto 0 2%;
+    width: 50%;
+    height: 33%;
+    background-color: aliceblue;
+    color: darkgreen;
+    border-radius: 0.2em;
+}
+
+nav { background-color: coral;
+    grid-area: n;
+}
+
+/* Coluna nav das página videos e artigos*/
+#pgVideos nav, #pgArtigos nav { margin-top: 26%;
+}
+
+nav a { color: coral;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+nav ul { padding: 0.4em;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+nav ul li { list-style-type: none;
+    background-color: aliceblue;
+    padding: 0.6em;
+    margin: 0.6em;
+    text-align: center;
+    border: solid thin aliceblue;
+    box-sizing: border-box;
+}
+
+nav ul li:hover { border: solid thin aliceblue;
+    background-color: coral;
+}
+
+nav ul li:hover a { color: aliceblue;
+}
+
+nav h3 { margin: 1em;
+    text-align: justify;
+    color: aliceblue;
+}
+
+aside { 
+    grid-area: a;
+}
+
+aside a { color: darkgreen;
+    text-align: center;
+    display: block;
+    width: 96%;
+    margin-top: 26%;
+    font-weight: 600;
+    background-color: #f2f2f2;
+    padding: 0.5em;
+    border-radius: 0.3em;
+}
+
+aside a p { margin-top: 0;
+}
+
+aside a img { width: 49%;
+}
+
+main { 
+    grid-area: m;
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: 10fr;
+    grid-template-areas: "ini ini" "con con" "cad cad" "art art" "alv alv" "pin pin" "ele ele" "gas gas" "por por" "cer cer" "lim lim" "adm adm";
+    overflow-y: scroll;
+}
+
+main #inicial { grid-area: ini;
+}
+
+main #confiar { grid-area: con;
+}
+
+main #cadastro { grid-area: cad;
+}
+
+main #artigos { grid-area: art;
+}
+
+main #alvenaria {  grid-area: alv;
+}
+
+main #pintura { grid-area: pin;
+}
+
+main #eletrica { grid-area: ele;
+}
+
+main #gas { grid-area: gas;
+}
+
+main #portao { grid-area: por;
+}
+
+main #cerca { grid-area: cer;
+}
+
+main #limpeza { grid-area: lim;
+}
+
+main #adm { grid-area: adm;
+}
+
+#pgVideos main { display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 40vh 25vh 15vh;
+    grid-template-areas: "vidmai vidmai vidmai" "vidmen vidmen vidmen" "mvid mvid mvid";
+    overflow-y: hidden;
+}
+
+.maisvideos { grid-area: mvid;
+}
+
+#inicial { z-index: 2;
+    background-color: antiquewhite;
+}
+
+#inicial a { background-color: red;
+    width: 16.4em;
+    height: 21em;
+    display: block;
+    float: left;
+    margin-right: 2em;
+    margin-top: 2em;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 0.4em;
+}
+
+#inicial a h2 { margin-top: 90%;
+    background-color: black;
+    padding: 0.4em;
+}
+
+#inicial a h2:hover { 
+    color: coral;
+}
+
+#inicial a:nth-of-type(4), #inicial a:nth-of-type(8) { margin-right: 2em;
+}
+
+.segundaLinha { margin-top: 2em;
+}
+
+#inicialAlvenaria { background-image: url(img/cortadas/alvenaria.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#inicialPintura { background-image: url(img/cortadas/pintor.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#inicialEletrica { background-image: url(img/cortadas/eletrica.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#inicialGas { background-image: url(img/cortadas/aquecedor.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#inicialPortao { background-image: url(img/cortadas/portao.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#inicialCerca { background-image: url(img/cortadas/cercaeletrica.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#inicialLimpeza { background-image: url(img/cortadas/limpeza.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#inicialAdm { background-image: url(img/cortadas/reuniao.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#confiar h2 { padding: 0.4em;
+    background-color: aliceblue;
+    color: darkgreen;
+    width: 32%;
+}
+
+#confiar article { display: grid;
+    grid-template-columns: 2fr 1.5fr 2fr 2fr;
+    grid-template-rows: 20vh 80vh;
+    grid-template-areas: "marcio cit paulo cond" "txt txt txt cond";
+    margin-right: 2em;
+}
+
+#confiar article div img { width: 50%;
+    height: 60%;
+}
+
+#confiar #marcio { color: coral;
+    font-weight: 600;
+    grid-area: marcio;
+}
+
+#confiar #paulo { color: coral;
+    font-weight: 600;
+    grid-area: paulo;
+    margin-right: 2em;
+    display: block;
+}
+
+#confiar #paulo span { margin-top: 0.1em;
+    float: right;
+    text-align: right;
+}
+
+#confiar #paulo img { float: right;
+}
+
+#confiar #citacao { grid-area: cit;
+}
+
+#confiar #citacao blockquote { 
+    font-weight: 300;
+    font-size: 1.5em
+}
+
+#confiar #citacao blockquote:nth-of-type(1) { margin-left: 0;
+    margin-top: 0;
+    text-align: left;
+}
+
+#confiar #citacao blockquote:nth-of-type(2) { margin-right: 0;
+    text-align: justify;
+}
+
+#confiar #textosConfiar { grid-area: txt;
+    margin-right: 2em;
+    line-height: 1.5em;
+}
+
+#confiar #condosParceiros { grid-area: cond;
+}
+
+#confiar #condosParceiros h2 { margin-top: 0;
+    width: 94%;
+    border-radius: 0.2em;
+    text-align: center;
+}
+
+#confiar #condosParceiros #primeiroCondo { background-color: aliceblue;
+    color: darkgreen;
+    border-radius: 0.2em;
+    padding: 0.6em 1em;
+    text-align: justify;
+}
+
+#primeiroCondo hr { border-color: darkgreen;
+}
+
+#primeiroCondo h3 { margin-top: 0;
+}
+
+#condosParceiros .anterior, #condosParceiros .posterior { background-color: coral;
+    color: aliceblue;
+    padding: 1em;
+    font-size: 1.1em;
+}
+
+#condosParceiros .anterior:hover, #condosParceiros .posterior:hover {   
+    background-color: aliceblue;
+    color: coral;
+}
+
+#condosParceiros #anteriorPosterior { height: 4em;
+}
+
+#anteriorPosterior a { display: block;
+    float: left;
+    margin-top: 0.5em;
+}
+
+#anteriorPosterior a:nth-of-type(2) { float: right;
+}
+
+#cadastro form { margin-right: 2em;
+    height: 46em;
+}
+
+#cadastro form fieldset { background-color: aliceblue;
+    width: 70%;
+    margin: auto;
+}
+
+#cadastro form fieldset p { margin: 1em 1em;}
+
+#cadastro form fieldset h3 { margin: 0.2em 0.8em;
+    color: darkgreen;
+}
+
+#cadastro form .maiorescl { width: 78%;
+}
+
+#cadastro form .menorescl { width: 25%;
+}
+
+#cadastro form label { display: block;
+    float: left;
+    width: 20%;
+    font-weight: 600;
+}
+
+#cadastro form input { height: 1.5em;
+}
+
+#cadastro .maiorescd { width: 67.98%;
+}
+
+#cadastro .menorescd { width: 25%;
+}
+
+#cadastro #condominios label { display: block;
+    float: left;
+    width: 31%;
+    font-weight: 600;
+}
+
+#cadastro #botoesCadastro { width: 72.5%;
+    margin: auto auto 1em auto;
+}
+
+#cadastro form input[type="button"] { height: 2em;
+    width: 10em;
+    border-bottom: solid medium darkgreen;
+    background-color: transparent;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    color: darkgreen;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-right: 6.73em;
+}
+
+#cadastro form input[type="button"]:hover { border-bottom: solid medium coral;
+    color: coral;
+}
+
+#cadastro form input[type="button"]:last-of-type { margin-right: 0;
+}
+
+#cadastro form input[type="button"]:hover { cursor: pointer;
+}
+
+#cadastro h2 { padding: 0.4em;
+    background-color: aliceblue;
+    color: darkgreen;
+    width: 9%;
+}
+
+#cadastro form #login input[type="radio"] { display: block;
+    float: left;
+    margin: 0 0.5em 0 0;
+}
+
+#cadastro form #login input[type="email"], #login input[type="password"] { display: flex;
+    align-items: center;
+    width: 50%;
+    clear: both;
+    margin: auto;
+}
+
+#cadastro form #login p { display: block;
+    clear: right;
+}
+
+#cadastro form #login p label { margin-top: 0.1em;
+    margin-bottom: 1em;
+}
+
+#cadastro form input[type="submit"] { padding: 0.4em;
+    font-size: 1.2em;
+    width: 20%;
+    height: 5%;
+    border-style: none;
+    border-radius: 0.2em;
+    background-color: coral;
+    color:aliceblue;
+    display: block;
+    float: right;
+    cursor: pointer;
+}
+
+#cadastro form #login input[type="submit"] { float: none;
+    margin: auto;
+    cursor: pointer;
+}
+
+#msgCadastro, #msgLogin { width: 72%;
+    display: block;
+    margin: 0 auto;
+    color: darkgreen;
+    font-size: 1.5em;
+    padding: 0.4em;
+    text-align: center;
+}
+
+div#videosArtigos { display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 100vh;
+    grid-template-areas: "vid arti";
+}
+
+#videosArtigos #articleVideos { grid-area: vid;
+    margin-right: 2em;
+}
+
+main #artigos #articleArtigos { grid-area: arti;
+    margin-right: 2em;
+}
+
+main #artigos h2 { display: block;
+    width: 48.5%;
+    padding: 0.4em;
+    background-color: aliceblue;
+    color: darkgreen;
+    border-radius: 0.2em;
+}
+
+#articleVideos h3, #articleArtigos h3, #alvenaria h3, #pintura h3, #eletrica h3, #gas h3, #portao h3, #cerca h3, #limpeza h3, #adm h3 { color: darkgreen;
+    text-align: center;
+    border-bottom: solid medium darkgreen;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    width: 41%;
+    margin: 0.4em auto;
+    padding: 0.4em;
+    cursor: pointer;
+}
+
+#articleVideos h3:hover, #articleArtigos h3:hover, #alvenaria h3:hover, #pintura h3:hover, #eletrica h3:hover, #gas h3:hover, #portao h3:hover, #cerca h3:hover, #limpeza h3:hover, #adm h3:hover { border-bottom: solid medium coral;
+    color: coral;
+}
+
+#articleVideos .videos { margin: 1em 0 1em 0;
+    width: 100%;
+    float: left;
+    text-align: justify;
+}
+
+#articleVideos .videos img { display: block;
+    float: left;
+    margin-right: 1em;
+    width: 32%;
+}
+
+#articleVideos .videos p { font-size: 1.1em;
+    font-weight: 600;
+}
+
+#maisVideos a { display: block;
+    clear: both;
+    color: darkgreen;
+    font-size: 1.2em;
+}
+
+#articleArtigos p { display: flex;
+    width: 100%;
+    background-color: aliceblue;
+    height: 10.74%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 1.4em;
+    text-align: justify;
+    border-radius: 0.2em;
+}
+
+#articleArtigos a { padding-left: 1em;
+    padding-right: 1em;
+    color: darkgreen;
+}
+
+p#maisArtigos { display: block;
+    float: left;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    margin-top: 0;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+p#maisArtigos a { padding-left: 0;
+    padding-right: 0;
+}
+
+.sectionTitulo { width: auto;
+    padding: 0.4em;
+    display: inline-block;
+    background-color: aliceblue;
+    color: darkgreen;
+}
+
+.articleDuasColunas { display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 80vh;
+    grid-template-areas: "artalv azu" "artele hidr" "artpor apor" "artcer scam" "artlim jar";
+}
+
+#alvenaria #articleAlvenaria { grid-area: artalv;
+    margin-right: 2em;
+}
+
+#alvenaria #articleAzulejo { grid-area: azu;
+    margin-right: 2em;
+}
+
+img.articleDuasColunas { width: 400px;
+    height: 320px;
+    margin: 1em auto;
+    display: block;
+    border-radius: 0.2em;
+}
+
+img.articleDuasColunas + p { line-height: 1.5em;
+    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+/* Parágrafos que estão imediatamente após as imagens que contém a classe articleDuasColunas */
+
+#pinturaColunas { display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 80vh;
+    grid-template-areas: "artpin tex";
+}
+
+#pintura #articlePintura { grid-area: artpin;
+    margin-right: 2em;
+}
+
+#pintura #articleTextura { grid-area: tex;
+    margin-right: 2em;
+}
+
+#eletricaColunas { display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 80vh;
+    grid-template-areas: "artele hidr";
+}
+
+#eletrica #articleEletrica { grid-area: artele;
+    margin-right: 2em;
+}
+
+#eletrica #articleHidraulica { grid-area: hidr;
+    margin-right: 2em;
+}
+
+#portaoColunas { display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 80vh;
+    grid-template-areas: "artpor apor";
+}
+
+#portao #articlePortao { grid-area: artpor;
+    margin-right: 2em;
+}
+
+#portao #portaAuto { grid-area: apor;
+    margin-right: 2em;
+}
+
+#cercaColunas { display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 75vh;
+    grid-template-areas: "artcer scam";
+}
+
+#cerca #articleCerca { grid-area: artcer;
+    margin-right: 2em;
+}
+
+#cerca #sistemaCam { grid-area: scam;
+    margin-right: 2em;
+}
+
+#limpezaColunas { display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 80vh;
+    grid-template-areas: "artlim jar";
+}
+
+#limpeza #articleLimpeza { grid-area: artlim;
+    margin-right: 2em;
+}
+
+#limpeza #jardinagem { grid-area: jar;
+    margin-right: 2em;
+}
+
+.articleTresColunas { display: grid;
+    grid-template-columns: 3.33fr 3.33fr 3.33fr;
+    grid-template-rows: 90vh;
+    grid-template-areas: "rgas aque arc" "aces cont logi";
+}
+
+#gas #redeGas { grid-area: rgas;
+    margin-right: 1em;
+}
+
+#gas #aquecedores { grid-area: aque;
+    margin-right: 1em;
+}
+
+#gas #arCondicionado { grid-area: arc;
+    margin-right: 1em;
+}
+
+#adm #admColunas { display: grid;
+    grid-template-columns: 3.33fr 3.3fr 3.33fr;
+    grid-template-rows: 90vh;
+    grid-template-areas: "aces cont logi";
+}
+
+#adm #acessoria { grid-area: aces;
+    margin-right: 1em;
+}
+
+#adm #contabilidade { grid-area: cont;
+    margin-right: 1em;
+}
+
+#adm #logistica { grid-area: logi;
+    margin-right: 1em;
+}
+
+img.articleTresColunas { width: 350px;
+    height: 280px;
+    margin: 1em auto;
+    display: block;
+    border-radius: 0.2em;
+}
+
+img.articleTresColunas + p { line-height: 1.5em;
+    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+p.contrate { display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    background-color: coral;
+    border-radius: 0.2em;
+    width: 40%;
+    font-size: 1.3em;
+    padding: 0.4em;
+    margin: auto auto 5em auto;
+}
+
+p.contrate a { font-weight: bold;
+    color: aliceblue;
+}
+
+p.contrate:hover { background-color: aliceblue;
+    color: coral;
+}
+
+p.contrate:hover a { color: coral;
+}
+
+/* Sessões de cadastro e login que só apacerem caso o botão relevante seja clicado */
+#aplicativo, #login, #clientes, #condominios { display: none;
+}
+
+/* Botão de voltar ao topo */
+.voltar { z-index: 1;
+    position: fixed;
+    bottom: 2%;
+    right: 30%;
+    padding: 0.6em;
+    background-color: aliceblue;
+    border-radius: 0.2em;
+    font-weight: bold;
+}
+
+.voltar a { color: darkgreen;
+    width: 100%;
+}
+
+.voltar:hover { background-color: darkgreen;
+    color: aliceblue;
+}
+
+.voltar a:hover { color: aliceblue;}
+
+/* Página videos */
+#pgVideos p, #pgArtigos p { line-height: 1.5em;
+}
+
+#pgVideos #videomaior { grid-area: vidmai;
+    margin-right: 2em;
+}
+
+#pgVideos #videosmenores { grid-area: vidmen;
+    margin-right: 1em;
+}
+
+#videosmenores { display: grid;
+    grid-template-columns: 3.33fr 3.33fr 3.33fr;
+    grid-template-rows: 100vh;
+    grid-template-areas: "um dois tres";
+}
+
+#pgVideos #videosmenores #um { grid-area: um;
+}
+
+#pgVideos #videosmenores #dois { grid-area: dois;
+}
+
+#pgVideos #videosmenores #tres { grid-area: tres;
+}
+
+#videomaior p { display: block;
+    font-size: 1.5em;
+    font-weight: 300;
+    clear: both;
+    margin-top: 0;
+}
+
+#videosmenores p {display: block;
+    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+iframe { display: flex;
+    margin: auto;
+    padding-bottom: 1em;
+}
+
+.maisvideos a { background-color: coral;
+    width: 25%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4em;
+    font-size: 1.2em;
+    color: aliceblue;
+    border-radius: 0.2em;
+    font-weight: 600;
+}
+
+.maisvideos a:hover { background-color: aliceblue;
+    color: coral;
+}
+
+/* Página artigos */
+#pgArtigos main section article { width: 50%;
+    margin: auto;
+    text-align: justify;
+}
+
+#pgArtigos main section article img { margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#pgArtigos main section article .maisArtigos { margin-top: 1em;
+    padding: 0.5em;
+    background-color: aliceblue;
+    font-weight: 300;
+    border-radius: 0.2em;
+}
+
+.maisArtigos a { color: darkgreen;
+}

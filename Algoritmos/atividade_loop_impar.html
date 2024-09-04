@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indicando quais são os números ímpares</title>
+</head>
+<body>
+    <script>
+        for (i= 0; i<10; i++) { 
+            let num= parseInt(prompt("Digite um número:"));
+            console.log(num);
+
+            if (num%2!==0) { document.write(num+ " - Número ímpar<br>"); }
+        }
+        /* Loop de dez prompts pedindo um número inteiro, e então registrando esses números no console e se caso o número, dividido por dois, ter o resto da divisão diferente de zero, indicado pelo símbolo !==, o número será escrito na tela, com a indicaçõa de ser um número ímpar. */
+    </script>  
+</body>
+</html>

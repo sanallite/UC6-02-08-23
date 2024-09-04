@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de carrinho de compras</title>
+    <style>
+        body { background-color: black;
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form { background-color: white;
+            padding: 2em;
+            width: 50%;
+            margin: auto;
+            box-shadow: red 50px;
+            border-radius: 0.3em;
+        }
+
+        .titulo { color: yellow;
+            text-align: center;
+            border-bottom: solid 0.5em red;
+            padding-bottom: 0.5em;
+        }
+
+        input { margin-bottom: 2em;
+        }
+
+        label[for="qtde"] { color: black;
+        }
+
+        label[for="produto"] { font-weight: bold;
+        }
+
+        input[type="submit"] { margin-bottom: 0;
+            padding: 1em;
+            background-color: red;
+            color: white;
+            border-style: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Simulando um carrinho de compras</h1>
+
+    <form name="car" onsubmit="return false">
+        <label for="produto">Hamburger Simples</label> <br>
+        <label for="">Valor: R$ 8,00</label> <br>
+
+        <label for="qtde">Quantidade</label>
+        <input type="number" name="v1" id="qtde"> <br>
+
+        <label for="produto">Hamburger Duplo Especial</label> <br>
+        <label for="">Valor: 10,90</label> <br>
+
+        <label for="qtde">Quantidade</label>
+        <input type="number" name="v2" id="qtde2"> <br>
+
+        <label for="produto">Coca Cola sem Açucar 500ml</label> <br>
+        <label for="">Valor: 14,90</label> <br>
+
+        <label for="qtde">Quantidade</label>
+        <input type="number" name="v3" id="qtde3"> <br>
+
+        <input type="submit" value="Adicionar Todos" onclick="calc()">
+    </form>
+
+    <p id="total"></p>
+
+    <p id="msg"></p>
+
+    <script>
+        let totalvar= document.getElementById("total");
+        let msgvar= document.getElementById("msg");
+
+        function calc() { let quantidade1= document.getElementById("qtde").value;
+            let quantidade2= document.getElementById("qtde2").value;
+            let quantidade3= document.getElementById("qtde3").value;
+
+            let valor1= quantidade1*8.00;
+            let valor2= quantidade2*10.90;
+            let valor3= quantidade3*14.90;
+
+            let valorTotal= valor1+valor2+valor3;
+
+            totalvar.innerHTML= "R$ " +valorTotal;
+
+            if (quantidade1< 0 || quantidade2< 0 || quantidade3< 0) {
+                msgvar.innerHTML= "O quantidade não pode ser negativa.";
+                totalvar.style.display="none";
+                msgvar.style.display="block";
+            }
+
+            else if (quantidade1> 10 || quantidade2> 10 || quantidade3> 10) {
+                msgvar.innerHTML="O limite de itens por cliente é 10 unidades."
+                totalvar.style.display="none";
+                msgvar.style.display="block";
+            }
+
+            else if (quantidade1== false && quantidade2== false && quantidade3== false) {
+                totalvar.style.display="none";
+                msgvar.innerHTML= "Selecione uma quantidade.";
+            }
+
+            else { totalvar.style.display="block";
+                msgvar.style.display="none";
+                totalvar.innerHTML= "Valor total: " +(new Intl.NumberFormat("br-BR", { style: 'currency', currency: 'BRL' }).format(valorTotal));
+                /* Pesquise isso! */
+            }
+        }
+    </script>
+</body>
+</html>
